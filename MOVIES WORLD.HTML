@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+    width: 150px; 
+    height: 100px; 
+    object-fit: contain;
+}
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff9800;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px;
+            margin: 0 -20px 20px -20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .section ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+        .section li {
+            flex: 1 1 20%;
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+        .section li:hover {
+            transform: scale(1.05);
+        }
+        .section li img {
+            width: 150px; 
+            height: 200px; 
+            object-fit: cover; 
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .section li a {
+            color: #333;
+            text-decoration: none;
+            background-color: #ff9800;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .section li a:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\gopav\OneDrive\Desktop\LOGO.png" alt="Logo">
+        <h1>MOVIES WORLD</h1>
+    </header>
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('movies')">Movies</a>
+        <a onclick="showSection('series')">Series</a>
+        <a onclick="showSection('animes')">Animes</a>
+    </nav>
+    <div class="content">
+        <div id="home" class="section">
+            <h2>Top Movies This Week</h2>
+            <ul>
+                <li>
+                    <img src="movie1.jpg" alt="Movie 1">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Movie 1</a>
+                </li>
+                <li>
+                    <img src="movie2.jpg" alt="Movie 2">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Movie 2</a>
+                </li>
+                <li>
+                    <img src="movie3.jpg" alt="Movie 3">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Movie 3</a>
+                </li>
+                <li>
+                    <img src="movie4.jpg" alt="Movie 4">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Movie 4</a>
+                </li>
+                <li>
+                    <img src="movie5.jpg" alt="Movie 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Movie 5</a>
+                </li>
+                <li>
+                    <img src="movie5.jpg" alt="Movie 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Movie 6</a>
+                </li>
+<li>
+                    <img src="movie5.jpg" alt="Movie 7">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Movie 7</a>
+                </li>
+<li>
+                    <img src="movie5.jpg" alt="Movie 8">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Movie 8</a>
+                </li>
+            </ul>
+            <h2>Top Series This Week</h2>
+            <ul>
+                <li>
+                    <img src="series1.jpg" alt="Series 1">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 1</a>
+                </li>
+                <li>
+                    <img src="series2.jpg" alt="Series 2">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 2</a>
+                </li>
+                <li>
+                    <img src="series3.jpg" alt="Series 3">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 3</a>
+                </li>
+                <li>
+                    <img src="series4.jpg" alt="Series 4">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 4</a>
+                </li>
+                <li>
+                    <img src="series5.jpg" alt="Series 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 5</a>
+                </li>
+                <li>
+                    <img src="series5.jpg" alt="Series 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 6</a>
+                </li>
+<li>
+                    <img src="series5.jpg" alt="Series 7">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 7</a>
+                </li>
+<li>
+                    <img src="series5.jpg" alt="Series 8">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 8</a>
+                </li>
+            </ul>
+            <h2>Top Animes This Week</h2>
+            <ul>
+                <li>
+                    <img src="anime1.jpg" alt="Anime 1">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Anime 1</a>
+                </li>
+                <li>
+                    <img src="anime2.jpg" alt="Anime 2">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Anime 2</a>
+                </li>
+                <li>
+                    <img src="anime3.jpg" alt="Anime 3">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Anime 3</a>
+                </li>
+                <li>
+                    <img src="anime4.jpg" alt="Anime 4">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Anime 4</a>
+                </li>
+                <li>
+                    <img src="anime5.jpg" alt="Anime 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Anime 5</a>
+                </li>
+                 <li>
+                    <img src="anime1.jpg" alt="Anime 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Anime 6</a>
+                </li>
+<li>
+                    <img src="anime1.jpg" alt="Anime 7">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Anime 7</a>
+                </li>
+<li>
+                    <img src="anime1.jpg" alt="Anime 8">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Anime 8</a>
+                </li>
+
+            </ul>
+        </div>
+        <div id="movies" class="section" style="display: none;">
+            <h2>Telugu Movies</h2>
+            <ul>
+                <li>
+                    <img src="telugu1.jpg" alt="Telugu Movie 1">
+                    <a href="drive-link">Download Telugu Movie 1</a>
+                </li>
+                <li>
+                    <img src="telugu2.jpg" alt="Telugu Movie 2">
+                    <a href="drive-link">Download Telugu Movie 2</a>
+                </li>
+                <li>
+                    <img src="telugu3.jpg" alt="Telugu Movie 3">
+                    <a href="drive-link">Download Telugu Movie 3</a>
+                </li>
+                <li>
+                    <img src="telugu4.jpg" alt="Telugu Movie 4">
+                    <a href="drive-link">Download Telugu Movie 4</a>
+                </li>
+                <li>
+                    <img src="telugu5.jpg" alt="Telugu Movie 5">
+                    <a href="drive-link">Download Telugu Movie 5</a>
+                </li>
+                <li>
+                    <img src="telugu5.jpg" alt="Telugu Movie 6">
+                    <a href="drive-link">Download Telugu Movie 6</a>
+                </li>
+<li>
+                    <img src="anime1.jpg" alt="Anime 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Anime 7</a>
+                </li>
+<li>
+                    <img src="anime1.jpg" alt="Anime 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Anime 8</a>
+                </li>
+
+            </ul>
+            <h2>English Movies</h2>
+            <ul>
+                <li>
+                    <img src="english1.jpg" alt="English Movie 1">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download English Movie 1</a>
+                </li>
+                <li>
+                    <img src="english2.jpg" alt="English Movie 2">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download English Movie 2</a>
+                </li>
+                <li>
+                    <img src="english3.jpg" alt="English Movie 3">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download English Movie 3</a>
+                </li>
+                <li>
+                    <img src="english4.jpg" alt="English Movie 4">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download English Movie 4</a>
+                </li>
+                <li>
+                    <img src="english5.jpg" alt="English Movie 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download English Movie 5</a>
+                </li>
+                <li>
+                    <img src="english5.jpg" alt="English Movie 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download English Movie 6</a>
+                </li>
+<li>
+                    <img src="english5.jpg" alt="English Movie 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download English Movie 7</a>
+                </li>
+<li>
+                    <img src="english5.jpg" alt="English Movie 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download English Movie 8</a>
+                </li>
+
+            </ul>
+        </div>
+        <div id="series" class="section" style="display: none;">
+            <h2>Prime Series</h2>
+            <ul>
+                <li>
+                    <img src="prime1.jpg" alt="Prime Series 1">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Prime Series 1</a>
+                </li>
+                <li>
+                    <img src="prime2.jpg" alt="Prime Series 2">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Prime Series 2</a>
+                </li>
+                <li>
+                    <img src="prime3.jpg" alt="Prime Series 3">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Prime Series 3</a>
+                </li>
+                <li>
+                    <img src="prime4.jpg" alt="Prime Series 4">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Prime Series 4</a>
+                </li>
+                <li>
+                    <img src="prime5.jpg" alt="Prime Series 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Prime Series 5</a>
+                </li>
+                <li>
+                    <img src="prime5.jpg" alt="Prime Series 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Prime Series 6</a>
+                </li>
+ <li>
+                    <img src="prime5.jpg" alt="Prime Series 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Prime Series 7</a>
+                </li> 
+<li>
+                    <img src="prime5.jpg" alt="Prime Series 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Prime Series 8</a>
+                </li>
+            </ul>
+            <h2>Netflix Series</h2>
+            <ul>
+                <li>
+                    <img src="netflix1.jpg" alt="Netflix Series 1">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Netflix Series 1</a>
+                </li>
+                <li>
+                    <img src="netflix2.jpg" alt="Netflix Series 2">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Netflix Series 2</a>
+                </li>
+                <li>
+                    <img src="netflix3.jpg" alt="Netflix Series 3">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Netflix Series 3</a>
+                </li>
+                <li>
+                    <img src="netflix4.jpg" alt="Netflix Series 4">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Netflix Series 4</a>
+                </li>
+                <li>
+                    <img src="netflix5.jpg" alt="Netflix Series 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Netflix Series 5</a>
+                </li>
+                <li>
+                    <img src="netflix5.jpg" alt="Netflix Series 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Netflix Series 5</a>
+                </li>
+ <li>
+                    <img src="netflix5.jpg" alt="Netflix Series 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Netflix Series 6</a>
+                </li>
+ <li>
+                    <img src="netflix5.jpg" alt="Netflix Series 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Netflix Series 7</a>
+ <li>
+                    <img src="netflix5.jpg" alt="Netflix Series 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Netflix Series 8</a>
+                </li>
+                </li>
+            </ul>
+            <h2>Disney Series</h2>
+            <ul>
+                <li>
+                    <img src="disney1.jpg" alt="Disney Series 1">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Disney Series 1</a>
+                </li>
+                <li>
+                    <img src="disney2.jpg" alt="Disney Series 2">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Disney Series 2</a>
+                </li>
+                <li>
+                    <img src="disney3.jpg" alt="Disney Series 3">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Disney Series 3</a>
+                </li>
+                <li>
+                    <img src="disney4.jpg" alt="Disney Series 4">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Disney Series 4</a>
+                </li>
+                <li>
+                    <img src="disney5.jpg" alt="Disney Series 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Disney Series 5</a>
+                </li>
+                <li>
+                    <img src="disney5.jpg" alt="Disney Series 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Disney Series 6</a>
+                </li>
+<li>
+                    <img src="disney5.jpg" alt="Disney Series 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Disney Series 7</a>
+<li>
+                    <img src="disney5.jpg" alt="Disney Series 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Disney Series 8</a>
+                </li>
+                </li>
+            </ul>
+            <h2>Other Series</h2>
+            <ul>
+                <li>
+                    <img src="other1.jpg" alt="Other Series 1">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 1</a>
+                </li>
+                <li>
+                    <img src="other2.jpg" alt="Other Series 2">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 2</a>
+                </li>
+                <li>
+                    <img src="other3.jpg" alt="Other Series 3">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 3</a>
+                </li>
+                <li>
+                    <img src="other4.jpg" alt="Other Series 4">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 4</a>
+                </li>
+                <li>
+                    <img src="other5.jpg" alt="Other Series 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 5</a>
+                </li>
+                <li>
+                    <img src="other5.jpg" alt="Other Series 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 6</a>
+                </li>
+<li>
+                    <img src="other5.jpg" alt="Other Series 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 7</a>
+                </li>
+<li>
+                    <img src="other5.jpg" alt="Other Series 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Series 8</a>
+                </li>
+            </ul>
+        </div>
+        <div id="animes" class="section" style="display: none;">
+            <h2>Anime Subbed</h2>
+            <ul>
+                <li>
+                    <img src="subbed1.jpg" alt="Subbed Anime 1">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Subbed Anime 1</a>
+                </li>
+                <li>
+                    <img src="subbed2.jpg" alt="Subbed Anime 2">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Subbed Anime 2</a>
+                </li>
+                <li>
+                    <img src="subbed3.jpg" alt="Subbed Anime 3">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Subbed Anime 3</a>
+                </li>
+                <li>
+                    <img src="subbed4.jpg" alt="Subbed Anime 4">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Subbed Anime 4</a>
+                </li>
+                <li>
+                    <img src="subbed5.jpg" alt="Subbed Anime 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Subbed Anime 5</a>
+                </li>
+                <li>
+                    <img src="subbed5.jpg" alt="Subbed Anime 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Subbed Anime 6</a>
+                </li>
+ <li>
+                    <img src="subbed5.jpg" alt="Subbed Anime 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Subbed Anime 7</a>
+                </li>
+ <li>
+                    <img src="subbed5.jpg" alt="Subbed Anime 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Subbed Anime 8</a>
+                </li>
+
+            </ul>
+            <h2>Anime Dubbed</h2>
+            <ul>
+                <li>
+                    <img src="dubbed1.jpg" alt="Dubbed Anime 1">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Dubbed Anime 1</a>
+                </li>
+                <li>
+                    <img src="dubbed2.jpg" alt="Dubbed Anime 2">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Dubbed Anime 2</a>
+                </li>
+                <li>
+                    <img src="dubbed3.jpg" alt="Dubbed Anime 3">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Dubbed Anime 3</a>
+                </li>
+                <li>
+                    <img src="dubbed4.jpg" alt="Dubbed Anime 4">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Dubbed Anime 4</a>
+                </li>
+                <li>
+                    <img src="dubbed5.jpg" alt="Dubbed Anime 5">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Dubbed Anime 5</a>
+                </li>
+                <li>
+                    <img src="dubbed5.jpg" alt="Dubbed Anime 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Dubbed Anime 6</a>
+                </li>
+<li>
+                    <img src="dubbed5.jpg" alt="Dubbed Anime 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Dubbed Anime 7</a>
+                </li>
+<li>
+                    <img src="dubbed5.jpg" alt="Dubbed Anime 6">
+                    <a href="https://drive.google.com/file/d/1Bk_Eb18bI-P_3asy042iphqXpJ5-eSry/view?usp=drive_link">Download Dubbed Anime 8</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
